@@ -106,7 +106,8 @@
     "yaml": "^2.4.2"
   },
   "scripts": {
-    "build:css": "tailwindcss build wwwroot/css/tailwind.css -o wwwroot/css/output.css"
+    "build": "npm run build:css && dotnet build",
+    "build:css": "tailwindcss build src/tailwind.css -o wwwroot/css/app.css"
   },
   "keywords": [],
   "author": "",
