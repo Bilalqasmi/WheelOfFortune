@@ -111,5 +111,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "resolutions": {
+    "string-width-cjs": "4.2.2" 
+  }
 }
