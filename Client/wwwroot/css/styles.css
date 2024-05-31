@@ -1,0 +1,38 @@
+﻿
+html, body, .container {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wheel-container {
+    position: relative;
+    width: 550px;
+    height: 550px;
+    margin: 0 auto;
+}
+
+.needle {
+    position: absolute;
+    top: 70%;
+    left: 74%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 10px 0 10px;
+    border-color: rgb(74, 34, 184) transparent transparent transparent;
+    transform: translateX(-50%) rotate(120deg);
+    z-index: 1;
+}

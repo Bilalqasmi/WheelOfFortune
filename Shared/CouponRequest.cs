@@ -1,4 +1,7 @@
-public class CouponRequest
+namespace BlazorApp.Shared
 {
-    public string CouponCode { get; set; }
+    public class CouponRequest
+    {
+        public string CouponCode { get; set; }
+    }
 }
