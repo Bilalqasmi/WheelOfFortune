@@ -1,5 +1,32 @@
 {
-    "navigationFallback": {
-        "rewrite": "/index.html"
+  "routes": [
+    {
+      "route": "/",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/css/*",
+      "headers": {
+        "cache-control": "no-cache",
+        "content-type": "text/css"
+      }
+    },
+    {
+      "route": "/api/*",
+      "headers": {
+        "cache-control": "no-cache",
+        "content-type": "application/json"
+      }
     }
+  ],
+  "mimeTypes": {
+    ".css": "text/css",
+    ".js": "application/javascript",
+    ".json": "application/json",
+    ".png": "image/png",
+    ".jpg": "image/jpeg",
+    ".svg": "image/svg+xml",
+    ".woff": "font/woff",
+    ".woff2": "font/woff2"
+  }
 }
